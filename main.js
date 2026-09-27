@@ -109,8 +109,8 @@ questions: [
         difficultyId: 2
     },
     {
-        question: 'What is the chemical symbol for gold?',
-        answers: ['Ag', 'Gd', 'Go', 'Au'],
+        question: 'What is the Most common boy\'s name in the world?',
+        answers: ['Mclovin', 'Leo ', 'Noah', 'Muhammad'],
         correctAnswer: 3,
         difficultyId: 2
     },
@@ -127,9 +127,9 @@ questions: [
         difficultyId: 2
     },
     {
-        question: 'Which organ in the human body pumps blood around the body?',
-        answers: ['Liver', 'Brain', 'Kidney', 'Heart'],
-        correctAnswer: 3,
+        question: 'What is the smallest planet in our solar system?',
+        answers: ['Mercury', 'Venus', 'Mars', 'Pluto'],
+        correctAnswer: 0,
         difficultyId: 2
     },
     {
@@ -152,7 +152,7 @@ questions: [
     },
     {
         question: 'What is "Peggy" a nickname for?',
-        answers: ['Penelope', 'Margaret', 'Gerald', 'Mohammed'],
+        answers: ['Penelope', 'Margaret', 'Gerald', 'Persephone'],
         correctAnswer: 1,
         difficultyId: 3
     },
