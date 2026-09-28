@@ -1,5 +1,11 @@
 const prompt = require('readline-sync');
 
+const difficulties = {
+    'easy' : 1,
+    'medium' : 2,
+    'hard' : 3
+}
+
 const categories =
 [
     {
