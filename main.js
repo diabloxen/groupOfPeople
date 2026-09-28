@@ -262,7 +262,7 @@ questions: [
         ]
     },
 
-    {
+    
       {
     name: 'geography',
     id: 7,
