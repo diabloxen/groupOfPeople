@@ -591,15 +591,192 @@ questions: [
     ]
 },
 
-    {
+        {
         name : music,
         id : 5,
-        questions : 
+        questions :
         [
-            { question :  ''   ,
-                answers : [],
-                correctAnswer : lorem
-            }
+            { question :  'Which artist released the hit "Shape of You" in 2017?'   ,
+                answers : ["Justin Bieber", "Ed Sheeran", "Bruno Mars", "Sam Smith"],
+                correctAnswer : 1,
+                difficultyId: 1
+            }, 
+        
+            { question :  'What was the title of Adeles record-breaking 2015 album?'   ,
+                answers : [19, 21, 25, 30],
+                correctAnswer : 2,
+                difficultyId: 1
+            },
+
+            { question :  'Which country-pop star transition fully to pop with the 2014 album 1989?'   ,
+                answers : ["Taylor Swift", "Kacey Musgraves", "Miley Cyrus", "Katy Perry"],
+                correctAnswer : 0,
+                difficultyId: 1
+            },
+
+            { question :  '"Old Town Road" by Lil Nas X features which veteran country singer?'   ,
+                answers : ["Keith Urban", "Blake Shelton", "Billy Ray Cyrus", "Tim McGraw"],
+                correctAnswer : 2,
+                difficultyId: 1
+            },
+
+            { question :  'Which boy band was formed on The X Factpr in 2010 and took the world by storm?'   ,
+                answers : ["5 Seconds of Summer", "The Wanted", "Big Time Rush", "One Direction"],
+                correctAnswer : 3,
+                difficultyId: 1
+            },
+
+            { question :  'What is the name of Carly Rae Jepsens viral 2011 hit?'   ,
+                answers : ["Call Me Maybe", "Good Time", "Run Away with Me", "I Really Like You"],
+                correctAnswer : 0,
+                difficultyId: 1
+            },
+
+            { question :  'Which 2014 Mark Ronson track features Bruno Mars on vocals?'   ,
+                answers : ["24K Magic", "Uptown Funk", "Locked Out of Heaven", "Treasure"],
+                correctAnswer : 1,
+                difficultyId: 1
+            },
+
+            { question :  'Luis Fonsi and Daddy Yankee dominated 2017 with which Spanish-language hit?'   ,
+                answers : ["Mi Gente", "Bailando", "Despacito", "Taki Taki"],
+                correctAnswer : 2,
+                difficultyId: 1
+            },
+
+            { question :  'Which teenage artist swept the "Big Four" categories at the Grammy Awards for her 2019 debut album?'   ,
+                answers : ["Olivia Rodrigo", "Billie Eilish", "Lorde", "Allesia Cara"],
+                correctAnswer : 1,
+                difficultyId: 1
+            },
+
+            { question :  'What is the name of Rihannas lead single from her 2016 album Anti, featuring Drake?'   ,
+                answers : ["Diamonds", "Work", "Needed Me", "Stay"],
+                correctAnswer : 1,
+                difficultyId: 1
+            },
+
+            { question :  'Which rapper won the Pulitzer Prize for Music in 2018 for his album DAMN.?'   ,
+                answers : ["J.Cole", "Drake", "Kendrick Lamar", "Kanye West"],
+                correctAnswer : 2,
+                difficultyId: 2
+            },
+
+            { question :  'Which electronic duo released the critcally acclaimed album Random Access Memories in 2013?'   ,
+                answers : ["Disclosure", "Daft Punk", "The Chemical Brothers", "Justice"],
+                correctAnswer : 1,
+                difficultyId: 2
+            },
+
+            { question :  'What is the title of Beyonces 2016 audio-visual album that dropped without priot announcement?'   ,
+                answers : ["Beyonce", "Lemonade", "Renaissance", "4"],
+                correctAnswer : 1,
+                difficultyId: 2
+            },
+
+            { question :  'Which alternative rock band won a Grammy for their hit single "Radioactive"?'   ,
+                answers : ["Imagine Dragons", "Twenty One Pilots", "Fall Out Boy", "Bastille"],
+                correctAnswer : 0,
+                difficultyId: 2
+            },
+
+            { question :  'Frank Ocean released two albums in the same weekend in August 2016. One was Blonde; what was the visual album called?'   ,
+                answers : ["Channel Orange", "Nostalgia, Ultra", "Endless", "Testing"],
+                correctAnswer : 2,
+                difficultyId: 2
+            },
+
+            { question :  'Which 2012 hit by Gotye featured the singer Kimbra?'   ,
+                answers : ["Somebody That I Used to Know", "Eyes Wide Open", "We Are Young", "Safe and Sound"],
+                correctAnswer : 0,
+                difficultyId: 2
+            },
+
+            { question :  'What is the real name of the Canadian artist known as The Weeknd?'   ,
+                answers : ["Aubrey Graham", "Abel Tesfaye", "Khalid Robinson", "Jacques Webster"],
+                correctAnswer : 1,
+                difficultyId: 2
+            },
+
+            { question :  'Which DJ produced the 2012 club anthem "Clarity" featuring Foxes?'   ,
+                answers : ["Avicii", "Calvin Harris", "Zedd", "Skrillex"],
+                correctAnswer : 2,
+                difficultyId: 2
+            },
+
+            { question :  'Childish Gambinos politically charged 2018 music video went viral globally. What was the song called?'   ,
+                answers : ["Redbone", "This Is America", "3005", "Feels Like Summer"],
+                correctAnswer : 1,
+                difficultyId: 2
+            },
+
+            { question :  'Which 2010 Katy Perry song features Snoop Dogg?'   ,
+                answers : ["Teenage Dream", "Firework", "California Gurls", "Roar"],
+                correctAnswer : 2,
+                difficultyId: 2
+            },
+
+            { question :  'Which indie folk band released the album Helplessness Blues in 2011?'   ,
+                answers : ["Fleet Foxes", "Bon Iver", "The Lumineers", "Grizzly Bear"],
+                correctAnswer : 0,
+                difficultyId: 3
+            },
+
+             { question :  'What was the name of Lana Del Reys unreleased debut album, which was briefly available in 2010 under her real name?'   ,
+                answers : ["Lizzy Grant a.k.a Lana Del Ray", "Born to Die", "Sirens", "Ultraviolence"],
+                correctAnswer : 0,
+                difficultyId: 3
+            },
+
+             { question :  'Which experimental hip-hop group dropped the mixtape Exmilitary in 2011?'   ,
+                answers : ["Brockhamptom", "Death Grips", "Run the Jewels", "Clipping"],
+                correctAnswer : 1,
+                difficultyId: 3
+            },
+
+             { question :  'Who produced the experimental beats for Kanye Wests polarizing 2013 track "On Sight"?'   ,
+                answers : ["Mike Dean", "Hudson Mohawke", "Daft Punk", "Arca"],
+                correctAnswer : 2,
+                difficultyId: 3
+            },
+
+             { question :  'Which artist released the critically acclaimed art-pop album Melodrama in 2017?'   ,
+                answers : ["St. Vincent", "FKA Twigs", "Lorde", "Weyes Blood"],
+                correctAnswer : 2,
+                difficultyId: 3
+            },
+
+             { question :  'What is the name of Tame Impalas 2012 sophomore studio album?'   ,
+                answers : ["Currents", "Lonerism", "Innerspeaker", "The Slow Rush"],
+                correctAnswer : 1,
+                difficultyId: 3
+            },
+
+             { question :  'Which British singer-songwriter released the album Process in 2017, winning the Mercury Prize?'   ,
+                answers : ["Michael Kiwanuka", "Moses Sumney", "James Blake", "Sampha"],
+                correctAnswer : 3,
+                difficultyId: 3
+            },
+
+             { question :  'What was the lead single from David Bowies final 2016 album, Blackstar?'   ,
+                answers : ["Lazarus", "I Cant Give Everything Away", "Sue (Or in a Season of Crime)", "Blackstar"],
+                correctAnswer : 3,
+                difficultyId: 3
+            },
+
+             { question :  'Which artist released the 2018 album Oil of Every Pearls Un-Insides?'   ,
+                answers : ["Sophie", "Arca", "Charli XCX", "Caroline Polachek"],
+                correctAnswer : 1,
+                difficultyId: 3
+            },
+
+             { question :  'Which indie rock bands 2010 album The Suburbs won the Grammy for Album of the Year?'   ,
+                answers : ["Vampire Weekend", "Arcade Fire", "Phoenix", "The Black Keys"],
+                correctAnswer : 1,
+                difficultyId: 3
+            },
+
+
         ]
     },
 
@@ -608,10 +785,185 @@ questions: [
         id : 6,
         questions : 
         [
-            { question :  ''   ,
-                answers : [],
-                correctAnswer : lorem
-            }
+            { question :  'Who is often referred to as "CR7"?'   ,
+                answers : ["Ronaldo Nazario", "Ronaldinho", "Cristiano Ronaldo", "Christian Romero"],
+                correctAnswer : 2,
+                difficultyId: 1
+            },
+
+            { question :  'How many players are on the court for one team in a standard basketball game?'   ,
+                answers : [5, 6, 7, 11],
+                correctAnswer : 0,
+                difficultyId: 1
+            },
+
+            { question :  'Which country hosteed the 2016 Summer Olympic Games?'   ,
+                answers : ["United Kingdom", "Brazil", "China", "Japan"],
+                correctAnswer : 1,
+                difficultyId: 1
+            },
+
+            { question :  'In golf, what is the term for scoring one stroke under par on a hole?'   ,
+                answers : ["Eagle", "Bogey", "Birdie", "Albatross"],
+                correctAnswer : 2,
+                difficultyId: 1
+            },
+
+            { question :  'Which sport uses a puck instead of a ball?'   ,
+                answers : ["Field Hockey", "Lacrosse", "Ice Hockey", "Polo"],
+                correctAnswer : 2,
+                difficultyId: 1
+            },
+
+            { question :  'How long is a standard professional football match, excluding extra time?'   ,
+                answers : ["80 min", "90 min", "120 min", "60 min"],
+                correctAnswer : 1,
+                difficultyId: 1
+            },
+
+            { question :  'Who holds the world record for the fastest 100m sprint?'   ,
+                answers : ["Tyson Gay", "Yohan Blake", "Usain Bolt", "Justin Gatlin"],
+                correctAnswer : 2,
+                difficultyId: 1
+            },
+
+            { question :  'Which grand slam tennis tournament is played on grass courts?'   ,
+                answers : ["Australian Open", "French Open", "Wimbledon", "Us Open"],
+                correctAnswer : 2,
+                difficultyId: 1
+            },
+
+            { question :  'In which sport would you execute a "slam dunk"?'   ,
+                answers : ["Volleyball", "Netball", "Basketball", "Handball"],
+                correctAnswer : 2,
+                difficultyId: 1
+            },
+
+            { question :  'What colour jersey does the leader of the general classification wear in the Tour de France?'   ,
+                answers : ["Green", "White", "Red", "Yellow"],
+                correctAnswer : 2,
+                difficultyId: 1
+            },
+
+            { question :  'Which country won the FIFA World Cup in 2014?'   ,
+                answers : ["Argentina", "Brazil", "Spain", "Germany"],
+                correctAnswer : 3,
+                difficultyId: 2
+            },
+
+            { question :  'Who has won the most Formula 1 World Drivers Championships in history?'   ,
+                answers : ["Michael Schumacher & Lewis Hamilton", "Ayrton Senna & Sebastian Vettel", "Max Verstappen & Alain Prost", "Lewis Hamilton & Sebastian Vettel"],
+                correctAnswer : 0,
+                difficultyId: 2
+            },
+
+            { question :  'Which NFL team pulled off the biggest comeback in Super Bowl history, overcoming a 28-3 deficit against the Atlanta Falcons?'   ,
+                answers : ["Kansas City Chiefs", "Philadelphia Eagles", "New England Patriots", "Seattle Seahawks"],
+                correctAnswer : 2,
+                difficultyId: 2
+            },
+
+            { question :  'In cricket, how many balls sit on top of the stumps at one end of the pitch?'   ,
+                answers : [1, 2, 3, 4],
+                correctAnswer : 1,
+                difficultyId: 2
+            },
+
+            { question :  'Which countries national rugby union teams is known as the "Springboks"?'   ,
+                answers : ["New Zealand", "Australia", "South Africa", "Fiji"],
+                correctAnswer : 2,
+                difficultyId: 2
+            },
+
+            { question :  'How many points is a touchdown worth in American Football before the extra point attempt?'   ,
+                answers : [3, 6, 7, 5],
+                correctAnswer : 1,
+                difficultyId: 2
+            },
+
+            { question :  'Which female tennis player has won 23 Grand Slam singles titles in the Open Era?'   ,
+                answers : ["Steffi Graf", "Venus Williams", "Serena Willaims", "Maria Sharapova"],
+                correctAnswer : 2,
+                difficultyId: 2
+            },
+
+            { question :  'In boxing, what weight class is directly below Heavyweight?'   ,
+                answers : ["Middleweight", "Cruiserweight", "Welterweight", "Light Heavyweight"],
+                correctAnswer : 1,
+                difficultyId: 2
+            },
+
+            { question :  'Which NBA team achieved a historic 73-9 regular-season record in 2015-16?'   ,
+                answers : ["Golden State Warriors", "Cleveland Cavaliers", "Los Angeles Lakers", "Chicago Bulls"],
+                correctAnswer : 0,
+                difficultyId: 2
+            },
+
+            { question :  'What is the maximum score possible in a single game of standard ten-pin bowling?'   ,
+                answers : [200, 300, 400, 500],
+                correctAnswer : 1,
+                difficultyId: 2
+            },
+
+            { question :  'Who was the first UFC fighter to hold championship titles in two different weight classes simultaneously?'   ,
+                answers : ["Jon Jones", "Georges St-Pierre", "Conor McGregor", "Amanda Nunes"],
+                correctAnswer : 2,
+                difficultyId: 3
+            },
+
+            { question :  'Which city hosted the first modern Olympic Games in 1896?'   ,
+                answers : ["Paris", "Athens", "Rome", "London"],
+                correctAnswer : 1,
+                difficultyId: 3
+            },
+
+            { question :  'What is the name of the trophy awarded annually to the champion of the National Hockey League (NHL)?'   ,
+                answers : ["The Stanley Cup", "The Calder Cup", "The Lombardi Trophy", "The Commisioners Trophy"],
+                correctAnswer : 0,
+                difficultyId: 3
+            },
+
+            { question :  'In baseball, what rare feat occurs when a pitcher wins a game without a single opposing batter reaching base by any means?'   ,
+                answers : ["A No-Hitter", "A Shutout", "A Perfect Game", "An Immaculate Inning"],
+                correctAnswer : 2,
+                difficultyId: 3
+            },
+
+            { question :  'Which country won the very first FIFA World Cup in 1930?'   ,
+                answers : ["Brazil", "Italy", "Argentina", "Uraguay"],
+                correctAnswer : 3,
+                difficultyId: 3
+            },
+
+            { question :  'In the sport of curling, what is the circular target on the ice called?'   ,
+                answers : ["The Button", "The Rings", "The House", "The Sheet"],
+                correctAnswer : 2,
+                difficultyId: 3
+            },
+
+            { question :  'Who was the first gymnast to be awarded a perfect score of 10.0 at the Olympic Games?'   ,
+                answers : ["Simone Biles", "Nadia Comaneci", "Olga Korbut", "Nastia Liuikin"],
+                correctAnswer : 1,
+                difficultyId: 3
+            },
+
+            { question :  'How many minutes long is a standard professional rugby union half?'   ,
+                answers : ["35 minutes", "40 minutes", "45 minutes", "50 minutes"],
+                correctAnswer : 1,
+                difficultyId: 3
+            },
+
+            { question :  'Which distance runner became the first person to run a marathon in under 2 hours (in an unofficial, optimized event in 2019)?'   ,
+                answers : ["Eliud Kipchoge", "Kenenisa Bekele", "Kelvin Kiptum", "Mo Farah"],
+                correctAnswer : 0,
+                difficultyId: 3
+            },
+
+            { question :  'What unique material was used to make the core of standard cricket balls traditionally?'   ,
+                answers : ["Solid rubber", "Cork", "Compressed wool", "Twine and Plastic"],
+                correctAnswer : 2,
+                difficultyId: 3
+            },
         ]
     },
 
