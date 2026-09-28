@@ -604,7 +604,8 @@ questions: [
         ]
     },
 
-    {
+    
+      {
     name: 'geography',
     id: 7,
     questions: [
