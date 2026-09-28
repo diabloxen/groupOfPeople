@@ -202,15 +202,190 @@ questions: [
     },
 
     {
-        name : filmTv,
-        id : 2,
-        questions : 
-        [
-            { question :  ''   ,
-                answers : [],
-                correctAnswer : lorem
-            }
-        ]
+    id: 2,
+    name: 'filmAndTv',
+    questions: [
+    {
+        question: 'Who played Ron Weasley in the Harry Potter franchise?',
+        answers: ['Daniel Radcliffe', 'Tom Oswald', 'Jonathan Banks', 'Rupert Grint'],
+        correctAnswer: 3,
+        difficultyId: 1
+    },
+    {
+        question: "In The Lion King, what is the name of Simba's father?",
+        answers: ['Mufasa', 'Scar', 'Rafiki', 'Zazu'],
+        correctAnswer: 0,
+        difficultyId: 1
+    },
+    {
+        question: 'Which film features the quote "I\'ll be back"?',
+        answers: ['Rocky', 'Die Hard', 'Terminator', 'Predator'],
+        correctAnswer: 2,
+        difficultyId: 1
+    },
+    {
+        question: 'What is the name of the cowboy in Toy Story?',
+        answers: ['Buzz', 'Andy', 'Woody', 'Rex'],
+        correctAnswer: 2,
+        difficultyId: 1
+    },
+    {
+        question: 'Which TV show follows a chemistry teacher who begins making illegal drugs?',
+        answers: ['Better Call Saul', 'Narcos', 'Ozark', 'Breaking Bad'],
+        correctAnswer: 3,
+        difficultyId: 1
+    },
+    {
+        question: 'Who played Jack Dawson in Titanic?',
+        answers: ['Leonardo DiCaprio', 'Brad Pitt', 'Tom Cruise', 'Matt Damon'],
+        correctAnswer: 0,
+        difficultyId: 1
+    },
+    {
+        question: 'What is the name of the fictional African country in Black Panther?',
+        answers: ['Zamunda', 'Wakanda', 'Genovia', 'Latveria'],
+        correctAnswer: 1,
+        difficultyId: 1
+    },
+    {
+        question: 'Which TV series features the characters Ross, Rachel, Monica, Chandler, Joey and Phoebe?',
+        answers: ['Seinfeld', 'The Office', 'Friends', 'Modern Family'],
+        correctAnswer: 2,
+        difficultyId: 1
+    }, 
+    {
+        question: 'In Finding Nemo, what type of fish is Nemo?',
+        answers: ['Goldfish', 'Angelfish', 'Clownfish', 'Tuna'],
+        correctAnswer: 2,
+        difficultyId: 1
+    },
+    {
+        question: 'Which film series features a character named Indiana Jones?',
+        answers: ['Jurassic Park', 'Indiana Jones', 'Mission: Impossible', 'The Mummy'],
+        correctAnswer: 1,
+        difficultyId: 1
+    },
+    {
+        question: 'Who directed the 1997 film Titanic?',
+        answers: ['Steven Spielberg', 'Christopher Nolan', 'Ridley Scott', 'James Cameron'],
+        correctAnswer: 3,
+        difficultyId: 2
+    },
+    {
+        question: "In Game of Thrones, what is the name of Jon Snow's direwolf?",
+        answers: ['Grey Wind', 'Summer', 'Ghost', 'Shaggydog'],
+        correctAnswer: 2,
+        difficultyId: 2
+    },
+    {
+        question: 'Which actor played Thanos in the Marvel Cinematic Universe?',
+        answers: ['Josh Brolin', 'Chris Evans', 'Chris Hemsworth', 'Mark Ruffalo'],
+        correctAnswer: 0,
+        difficultyId: 2
+    },
+    {
+        question: 'In The Matrix, which pill does Neo take?',
+        answers: ['Green', 'Red', 'Yellow', 'Blue'],
+        correctAnswer: 1,
+        difficultyId: 2
+    },
+    {
+        question: 'What is the name of the hotel in The Shining?',
+        answers: ['Bates Motel', 'Grand Budapest Hotel', 'Continental Hotel', 'Overlook Hotel'],
+        correctAnswer: 3,
+        difficultyId: 2
+    },
+    {
+        question: 'Which TV series is set primarily in the fictional town of Hawkins, Indiana?',
+        answers: ['Riverdale', 'Stranger Things', 'The Walking Dead', 'Supernatural'],
+        correctAnswer: 1,
+        difficultyId: 2
+    },
+    {
+        question: 'Who played the Joker in The Dark Knight?',
+        answers: ['Joaquin Phoenix', 'Jack Nicholson', 'Heath Ledger', 'Jared Leto'],
+        correctAnswer: 2,
+        difficultyId: 2
+    },
+    {
+        question: 'In The Lord of the Rings, what is the name of the creature who says "My precious"?',
+        answers: ['Saruman', 'Sauron', 'Grima', 'Gollum'],
+        correctAnswer: 3,
+        difficultyId: 2
+    },
+    {
+        question: 'Which film won the Academy Award for Best Picture at the 2020 Oscars?',
+        answers: ['Parasite', '1917', 'Joker', 'Once Upon a Time in Hollywood'],
+        correctAnswer: 0,
+        difficultyId: 2
+    },
+    {
+        question: 'What is the name of the fictional paper company in the US version of The Office?',
+        answers: ['PaperCo', 'Scranton Paper', 'Dunder Mifflin', 'Wernham Hogg'],
+        correctAnswer: 2,
+        difficultyId: 2
+    },
+    {
+        question: "In The Dark Knight, what is the name of Harvey Dent's fiancée?",
+        answers: ['Selina Kyle', 'Martha Wayne', 'Barbara Gordon', 'Rachel Dawes'],
+        correctAnswer: 3,
+        difficultyId: 3
+    },
+    {
+        question: "In Stranger Things, what is Eleven's real first name?",
+        answers: ['Sarah', 'Jane', 'Nancy', 'Joyce'],
+        correctAnswer: 1,
+        difficultyId: 3
+    },
+    {
+        question: 'Which actor played Professor X in the original X-Men film series?',
+        answers: ['Ian McKellen', 'Michael Fassbender', 'Patrick Stewart', 'James McAvoy'],
+        correctAnswer: 2,
+        difficultyId: 3
+    },
+    {
+        question: "In The Lord of the Rings, what is the name of Aragorn's sword after it is reforged?",
+        answers: ['Andúril', 'Glamdring', 'Sting', 'Narsil'],
+        correctAnswer: 0,
+        difficultyId: 3
+    },
+    {
+        question: 'In The Simpsons, what is the name of the town where the Simpson family lives?',
+        answers: ['Shelbyville', 'Quahog', 'Hill Valley', 'Springfield'],
+        correctAnswer: 3,
+        difficultyId: 3
+    },
+    {
+        question: 'Who played Jack Sparrow in the Pirates of the Caribbean films?',
+        answers: ['Orlando Bloom', 'Geoffrey Rush', 'Johnny Depp', 'Christian Bale'],
+        correctAnswer: 2,
+        difficultyId: 3
+    },
+    {
+        question: "In Harry Potter, what is the name of Harry's owl?",
+        answers: ['Hedwig', 'Crookshanks', 'Scabbers', 'Fawkes'],
+        correctAnswer: 0,
+        difficultyId: 3
+    },
+    {
+        question: 'Which film features the fictional character Tyler Durden?',
+        answers: ['American Psycho', 'Se7en', 'Fight Club', 'The Departed'],
+        correctAnswer: 2,
+        difficultyId: 3
+    },
+    {
+        question: "In The Walking Dead, what is the name of Rick Grimes' son?",
+        answers: ['Glenn', 'Carl', 'Shane', 'Dale'],
+        correctAnswer: 1,
+        difficultyId: 3
+    },
+    {
+        question: 'What is the highest rated film in the MCU?',
+        answers: ['Spider-Man: No Way Home', 'Captain America: Civil War', 'Avengers: Endgame', 'Black Panther'],
+        correctAnswer: 3,
+        difficultyId: 3
+    }
+]
     },
 
 {
