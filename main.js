@@ -220,59 +220,70 @@ questions: [
         {
             question: 'Which fruit is traditionally used to make guacamole?',
             answers: ['Tomato', 'Avocado', 'Mango', 'Apple'],
-            correctAnswer: 1
+            correctAnswer: 1,
+            difficultyId: 1
         },
         {
             question: 'Which country is famous for inventing pizza?',
             answers: ['France', 'Spain', 'Italy', 'Greece'],
-            correctAnswer: 2
+            correctAnswer: 2,
+            difficultyId: 1
         },
         {
             question: 'What is the main ingredient in hummus?',
             answers: ['Chickpeas', 'Lentils', 'Potatoes', 'Rice'],
-            correctAnswer: 0
+            correctAnswer: 0,
+            difficultyId: 1
         },
         {
             question: 'Which vitamin is particularly abundant in oranges?',
             answers: ['Vitamin A', 'Vitamin B12', 'Vitamin C', 'Vitamin D'],
-            correctAnswer: 2
+            correctAnswer: 2,
+            difficultyId: 1
         },
         {
             question: 'What type of food is cheddar?',
             answers: ['Bread', 'Cheese', 'Meat', 'Pasta'],
-            correctAnswer: 1
+            correctAnswer: 1,
+            difficultyId: 1
         },
         {
             question: 'Which grain is traditionally used to make risotto?',
             answers: ['Wheat', 'Barley', 'Arborio rice', 'Oats'],
-            correctAnswer: 2
+            correctAnswer: 2,
+            difficultyId: 1
         },
         {
             question: 'What is sushi traditionally associated with?',
             answers: ['Japan', 'Mexico', 'Brazil', 'India'],
-            correctAnswer: 0
+            correctAnswer: 0,
+            difficultyId: 1
         },
         {
             question: 'Which vegetable is used to make traditional French fries?',
             answers: ['Carrot', 'Potato', 'Turnip', 'Parsnip'],
-            correctAnswer: 1
+            correctAnswer: 1,
+            difficultyId: 1
         },
         {
             question: 'What is the main ingredient in traditional bread?',
             answers: ['Flour', 'Cheese', 'Sugar', 'Eggs'],
-            correctAnswer: 0
+            correctAnswer: 0,
+            difficultyId: 1
         },
         {
             question: 'Which drink is made from fermented tea leaves and sugar?',
             answers: ['Lemonade', 'Kombucha', 'Milkshake', 'Espresso'],
-            correctAnswer: 1
+            correctAnswer: 1,
+            difficultyId: 1
         },
 
         // Medium
         {
             question: 'Which country is the origin of the dish paella?',
             answers: ['Portugal', 'Spain', 'Italy', 'France'],
-            correctAnswer: 1
+            correctAnswer: 1,
+            difficultyId: 2
         },
         {
             question: 'What is the main ingredient in traditional pesto?',
