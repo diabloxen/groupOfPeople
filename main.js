@@ -453,52 +453,62 @@ questions: [
         {
             question: 'Solve: 3x + 5 = 20',
             answers: ['3', '5', '7', '15'],
-            correctAnswer: 1
+            correctAnswer: 1,
+            difficultyId: 2
         },
         {
             question: 'What is the area of a rectangle measuring 8 cm × 6 cm?',
             answers: ['14 cm²', '28 cm²', '48 cm²', '56 cm²'],
-            correctAnswer: 2
+            correctAnswer: 2,
+            difficultyId: 2
         },
         {
             question: 'What is 15% of 240?',
             answers: ['24', '30', '36', '40'],
-            correctAnswer: 2
+            correctAnswer: 2,
+            difficultyId: 2
         },
         {
             question: 'What is the next number in the sequence 3, 6, 12, 24, …?',
             answers: ['36', '42', '48', '54'],
-            correctAnswer: 2
+            correctAnswer: 2,
+            difficultyId: 2
         },
         {
             question: 'Simplify: 4(2 + 3) − 6',
             answers: ['10', '12', '14', '16'],
-            correctAnswer: 2
+            correctAnswer: 2,
+            difficultyId: 2
         },
         {
             question: 'What is √144?',
             answers: ['10', '11', '12', '14'],
-            correctAnswer: 2
+            correctAnswer: 2,
+            difficultyId: 2
         },
         {
             question: 'A £60 item is reduced by 25%. What is its new price?',
             answers: ['£40', '£45', '£50', '£55'],
-            correctAnswer: 1
+            correctAnswer: 1,
+            difficultyId: 2
         },
         {
             question: 'What is the mean of 8, 12, 15 and 5?',
             answers: ['8', '9', '10', '12'],
-            correctAnswer: 2
+            correctAnswer: 2,
+            difficultyId: 2
         },
         {
             question: 'What is the probability of rolling a 6 on a fair six-sided die?',
             answers: ['1/2', '1/4', '1/6', '1/12'],
-            correctAnswer: 2
+            correctAnswer: 2,
+            difficultyId: 2
         },
         {
             question: 'What is the gradient of the line y = 3x + 7?',
             answers: ['3', '7', '−3', '−7'],
-            correctAnswer: 0
+            correctAnswer: 0,
+            difficultyId: 2
         },
 
         // Hard
@@ -510,22 +520,26 @@ questions: [
                 'x = −2 or −3',
                 'x = 3 or 5'
             ],
-            correctAnswer: 1
+            correctAnswer: 1,
+            difficultyId: 3
         },
         {
             question: 'What is the derivative of f(x) = 3x² + 4x − 7?',
             answers: ['3x + 4', '6x + 4', '6x² + 4', '6x − 7'],
-            correctAnswer: 1
+            correctAnswer: 1,
+            difficultyId: 3
         },
         {
             question: 'What is ∫ 6x dx?',
             answers: ['3x² + C', '6x² + C', '2x³ + C', '6x + C'],
-            correctAnswer: 0
+            correctAnswer: 0,
+            difficultyId: 3
         },
         {
             question: 'A triangle has sides 7 cm, 24 cm and 25 cm. What type of triangle is it?',
             answers: ['Equilateral', 'Isosceles', 'Right-angled', 'Obtuse only'],
-            correctAnswer: 2
+            correctAnswer: 2,
+            difficultyId: 3
         },
         {
             question: 'What is the exact value of sin 30°?',
