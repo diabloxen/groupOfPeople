@@ -252,7 +252,7 @@ questions: [
         answers: ['Seinfeld', 'The Office', 'Friends', 'Modern Family'],
         correctAnswer: 2,
         difficultyId: 1
-    },
+    }, 
     {
         question: 'In Finding Nemo, what type of fish is Nemo?',
         answers: ['Goldfish', 'Angelfish', 'Clownfish', 'Tuna'],
