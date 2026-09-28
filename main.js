@@ -207,30 +207,352 @@ questions: [
         ]
     },
 
-   {
-        name : food,
-        id : 3,
-        questions : 
-        [
-            { question :  ''   ,
-                answers : [],
-                correctAnswer : lorem
-            }
-        ]
-    },
+{
+    name: 'food',
+    questions: [
+        // Easy
+        {
+            question: 'Which fruit is traditionally used to make guacamole?',
+            answers: ['Tomato', 'Avocado', 'Mango', 'Apple'],
+            correctAnswer: 1
+        },
+        {
+            question: 'Which country is famous for inventing pizza?',
+            answers: ['France', 'Spain', 'Italy', 'Greece'],
+            correctAnswer: 2
+        },
+        {
+            question: 'What is the main ingredient in hummus?',
+            answers: ['Chickpeas', 'Lentils', 'Potatoes', 'Rice'],
+            correctAnswer: 0
+        },
+        {
+            question: 'Which vitamin is particularly abundant in oranges?',
+            answers: ['Vitamin A', 'Vitamin B12', 'Vitamin C', 'Vitamin D'],
+            correctAnswer: 2
+        },
+        {
+            question: 'What type of food is cheddar?',
+            answers: ['Bread', 'Cheese', 'Meat', 'Pasta'],
+            correctAnswer: 1
+        },
+        {
+            question: 'Which grain is traditionally used to make risotto?',
+            answers: ['Wheat', 'Barley', 'Arborio rice', 'Oats'],
+            correctAnswer: 2
+        },
+        {
+            question: 'What is sushi traditionally associated with?',
+            answers: ['Japan', 'Mexico', 'Brazil', 'India'],
+            correctAnswer: 0
+        },
+        {
+            question: 'Which vegetable is used to make traditional French fries?',
+            answers: ['Carrot', 'Potato', 'Turnip', 'Parsnip'],
+            correctAnswer: 1
+        },
+        {
+            question: 'What is the main ingredient in traditional bread?',
+            answers: ['Flour', 'Cheese', 'Sugar', 'Eggs'],
+            correctAnswer: 0
+        },
+        {
+            question: 'Which drink is made from fermented tea leaves and sugar?',
+            answers: ['Lemonade', 'Kombucha', 'Milkshake', 'Espresso'],
+            correctAnswer: 1
+        },
 
-    {
-        name : math,
-        id : 4,
-        questions : 
-        [
-            {
-                question : 'what is a 2 + 2?',
-                answers : [ '2', '3', '4', '5' ],
-                correctAnswer : 2
-            }
-        ]
-    },
+        // Medium
+        {
+            question: 'Which country is the origin of the dish paella?',
+            answers: ['Portugal', 'Spain', 'Italy', 'France'],
+            correctAnswer: 1
+        },
+        {
+            question: 'What is the main ingredient in traditional pesto?',
+            answers: ['Basil', 'Parsley', 'Spinach', 'Coriander'],
+            correctAnswer: 0
+        },
+        {
+            question: 'Which spice gives many curries their yellow colour?',
+            answers: ['Paprika', 'Cumin', 'Turmeric', 'Cinnamon'],
+            correctAnswer: 2
+        },
+        {
+            question: 'What type of pastry is used to make traditional baklava?',
+            answers: ['Shortcrust', 'Filo', 'Puff pastry', 'Choux'],
+            correctAnswer: 1
+        },
+        {
+            question: 'Which cheese is traditionally used in a Greek salad?',
+            answers: ['Brie', 'Cheddar', 'Feta', 'Gouda'],
+            correctAnswer: 2
+        },
+        {
+            question: 'What is miso primarily made from?',
+            answers: ['Fermented soybeans', 'Wheat flour', 'Potatoes', 'Chickpeas'],
+            correctAnswer: 0
+        },
+        {
+            question: 'Which cooking method involves cooking food slowly in liquid at a low temperature?',
+            answers: ['Grilling', 'Poaching', 'Frying', 'Roasting'],
+            correctAnswer: 1
+        },
+        {
+            question: 'Which nut is traditionally used to make marzipan?',
+            answers: ['Peanut', 'Almond', 'Walnut', 'Cashew'],
+            correctAnswer: 1
+        },
+        {
+            question: 'What is the primary ingredient in traditional falafel?',
+            answers: ['Chickpeas or fava beans', 'Potatoes', 'Rice', 'Corn'],
+            correctAnswer: 0
+        },
+        {
+            question: 'Which pasta shape is traditionally long, thin and cylindrical?',
+            answers: ['Penne', 'Fusilli', 'Spaghetti', 'Ravioli'],
+            correctAnswer: 2
+        },
+
+        // Hard
+        {
+            question: 'What is the Maillard reaction primarily responsible for?',
+            answers: [
+                'Food freezing',
+                'Browning and complex flavours during cooking',
+                'Food fermentation',
+                'Increasing water content'
+            ],
+            correctAnswer: 1
+        },
+        {
+            question: 'Which Japanese ingredient is made from fermented soybeans and is known for its strong smell?',
+            answers: ['Tofu', 'Natto', 'Mirin', 'Dashi'],
+            correctAnswer: 1
+        },
+        {
+            question: 'What is saffron obtained from?',
+            answers: ['Tree bark', 'Flower stigmas', 'Tree roots', 'Fruit seeds'],
+            correctAnswer: 1
+        },
+        {
+            question: 'Which French cooking term means ingredients are prepared and organised before cooking?',
+            answers: ['Mise en place', 'À la carte', 'Sous-vide', 'Déglacer'],
+            correctAnswer: 0
+        },
+        {
+            question: 'What is the primary microorganism responsible for bread fermentation?',
+            answers: ['Yeast', 'Algae', 'Protozoa', 'Mould mites'],
+            correctAnswer: 0
+        },
+        {
+            question: 'Which Italian cheese is traditionally made from buffalo milk and is commonly used on pizza?',
+            answers: ['Mozzarella di bufala', 'Parmesan', 'Pecorino Romano', 'Gorgonzola'],
+            correctAnswer: 0
+        },
+        {
+            question: 'What is the main difference between a macaron and a macaroon?',
+            answers: [
+                'Macarons use almond meringue shells; macaroons are typically coconut-based',
+                'Macarons contain chocolate; macaroons contain cheese',
+                'Macaroons are always savoury',
+                'There is no difference'
+            ],
+            correctAnswer: 0
+        },
+        {
+            question: 'Which compound gives chilli peppers their characteristic heat?',
+            answers: ['Capsaicin', 'Caffeine', 'Citric acid', 'Lactose'],
+            correctAnswer: 0
+        },
+        {
+            question: 'What is umami generally described as?',
+            answers: ['Sweet', 'Bitter', 'Savoury', 'Sour'],
+            correctAnswer: 2
+        },
+        {
+            question: 'Which process converts milk into yoghurt?',
+            answers: ['Fermentation', 'Caramelisation', 'Distillation', 'Dehydration'],
+            correctAnswer: 0
+        }
+    ]
+},
+
+{
+    name: 'maths',
+    questions: [
+        // Easy
+        {
+            question: 'What is 7 x 8?',
+            answers: ['54', '56', '64', '48'],
+            correctAnswer: 1,
+            difficultyId: 1
+        },
+        {
+            question: 'What is 100 ÷ 4?',
+            answers: ['20', '25', '30', '40'],
+            correctAnswer: 1,
+            difficultyId: 1
+        },
+        {
+            question: 'What is 15 + 27?',
+            answers: ['32', '40', '42', '44'],
+            correctAnswer: 2,
+            difficultyId: 1
+        },
+        {
+            question: 'What is 50 − 18?',
+            answers: ['28', '32', '38', '42'],
+            correctAnswer: 1,
+            difficultyId: 1
+        },
+        {
+            question: 'What is 10% of 200?',
+            answers: ['10', '20', '25', '30'],
+            correctAnswer: 1,
+            difficultyId: 1
+        },
+        {
+            question: 'What is the square of 9?',
+            answers: ['18', '72', '81', '90'],
+            correctAnswer: 2,
+            difficultyId: 1
+        },
+        {
+            question: 'How many degrees are in a right angle?',
+            answers: ['45°', '90°', '180°', '360°'],
+            correctAnswer: 1,
+            difficultyId: 1
+        },
+        {
+            question: 'What is ¾ as a decimal?',
+            answers: ['0.25', '0.5', '0.75', '1.25'],
+            correctAnswer: 2,
+            difficultyId: 1
+        },
+        {
+            question: 'What is the perimeter of a square with sides of 5 cm?',
+            answers: ['10 cm', '15 cm', '20 cm', '25 cm'],
+            correctAnswer: 2,
+            difficultyId: 1
+        },
+        {
+            question: 'What is 2³?',
+            answers: ['6', '8', '9', '12'],
+            correctAnswer: 1,
+            difficultyId: 1
+        },
+
+        // Medium
+        {
+            question: 'Solve: 3x + 5 = 20',
+            answers: ['3', '5', '7', '15'],
+            correctAnswer: 1
+        },
+        {
+            question: 'What is the area of a rectangle measuring 8 cm × 6 cm?',
+            answers: ['14 cm²', '28 cm²', '48 cm²', '56 cm²'],
+            correctAnswer: 2
+        },
+        {
+            question: 'What is 15% of 240?',
+            answers: ['24', '30', '36', '40'],
+            correctAnswer: 2
+        },
+        {
+            question: 'What is the next number in the sequence 3, 6, 12, 24, …?',
+            answers: ['36', '42', '48', '54'],
+            correctAnswer: 2
+        },
+        {
+            question: 'Simplify: 4(2 + 3) − 6',
+            answers: ['10', '12', '14', '16'],
+            correctAnswer: 2
+        },
+        {
+            question: 'What is √144?',
+            answers: ['10', '11', '12', '14'],
+            correctAnswer: 2
+        },
+        {
+            question: 'A £60 item is reduced by 25%. What is its new price?',
+            answers: ['£40', '£45', '£50', '£55'],
+            correctAnswer: 1
+        },
+        {
+            question: 'What is the mean of 8, 12, 15 and 5?',
+            answers: ['8', '9', '10', '12'],
+            correctAnswer: 2
+        },
+        {
+            question: 'What is the probability of rolling a 6 on a fair six-sided die?',
+            answers: ['1/2', '1/4', '1/6', '1/12'],
+            correctAnswer: 2
+        },
+        {
+            question: 'What is the gradient of the line y = 3x + 7?',
+            answers: ['3', '7', '−3', '−7'],
+            correctAnswer: 0
+        },
+
+        // Hard
+        {
+            question: 'Solve: x² − 5x + 6 = 0',
+            answers: [
+                'x = 1 or 6',
+                'x = 2 or 3',
+                'x = −2 or −3',
+                'x = 3 or 5'
+            ],
+            correctAnswer: 1
+        },
+        {
+            question: 'What is the derivative of f(x) = 3x² + 4x − 7?',
+            answers: ['3x + 4', '6x + 4', '6x² + 4', '6x − 7'],
+            correctAnswer: 1
+        },
+        {
+            question: 'What is ∫ 6x dx?',
+            answers: ['3x² + C', '6x² + C', '2x³ + C', '6x + C'],
+            correctAnswer: 0
+        },
+        {
+            question: 'A triangle has sides 7 cm, 24 cm and 25 cm. What type of triangle is it?',
+            answers: ['Equilateral', 'Isosceles', 'Right-angled', 'Obtuse only'],
+            correctAnswer: 2
+        },
+        {
+            question: 'What is the exact value of sin 30°?',
+            answers: ['0', '1/2', '√2/2', '1'],
+            correctAnswer: 1
+        },
+        {
+            question: 'If log₁₀(x) = 3, what is x?',
+            answers: ['30', '100', '300', '1000'],
+            correctAnswer: 3
+        },
+        {
+            question: 'What is the determinant of the matrix [[3, 2], [1, 4]]?',
+            answers: ['8', '10', '12', '14'],
+            correctAnswer: 1
+        },
+        {
+            question: 'A fair coin is flipped 3 times. What is the probability of getting exactly 2 heads?',
+            answers: ['1/8', '1/4', '3/8', '1/2'],
+            correctAnswer: 2
+        },
+        {
+            question: 'If f(x) = x² − 4x + 3, what is the minimum value of f(x)?',
+            answers: ['−2', '−1', '0', '1'],
+            correctAnswer: 1
+        },
+        {
+            question: 'What is the sum of the interior angles of a 12-sided polygon?',
+            answers: ['1,440°', '1,620°', '1,800°', '2,160°'],
+            correctAnswer: 2
+        }
+    ]
+},
 
     {
         name : music,
@@ -257,7 +579,6 @@ questions: [
     },
 
     {
-      {
     name: 'geography',
     id: 7,
     questions: [
