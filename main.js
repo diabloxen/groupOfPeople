@@ -544,32 +544,38 @@ questions: [
         {
             question: 'What is the exact value of sin 30°?',
             answers: ['0', '1/2', '√2/2', '1'],
-            correctAnswer: 1
+            correctAnswer: 1,
+            difficultyId: 3
         },
         {
             question: 'If log₁₀(x) = 3, what is x?',
             answers: ['30', '100', '300', '1000'],
-            correctAnswer: 3
+            correctAnswer: 3,
+            difficultyId: 3
         },
         {
             question: 'What is the determinant of the matrix [[3, 2], [1, 4]]?',
             answers: ['8', '10', '12', '14'],
-            correctAnswer: 1
+            correctAnswer: 1,
+            difficultyId: 3
         },
         {
             question: 'A fair coin is flipped 3 times. What is the probability of getting exactly 2 heads?',
             answers: ['1/8', '1/4', '3/8', '1/2'],
-            correctAnswer: 2
+            correctAnswer: 2,
+            difficultyId: 3
         },
         {
             question: 'If f(x) = x² − 4x + 3, what is the minimum value of f(x)?',
             answers: ['−2', '−1', '0', '1'],
-            correctAnswer: 1
+            correctAnswer: 1,
+            difficultyId: 3
         },
         {
             question: 'What is the sum of the interior angles of a 12-sided polygon?',
             answers: ['1,440°', '1,620°', '1,800°', '2,160°'],
-            correctAnswer: 2
+            correctAnswer: 2,
+            difficultyId: 3
         }
     ]
 },
