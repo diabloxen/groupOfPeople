@@ -1,10 +1,12 @@
-export const categories =
+const prompt = require("readline-sync");
+
+const categories =
 [
     {
 // suggest to add an id later, idk itll be useful for something later
        name: 'generalKnowledge',
        id: 1,
-questions: [
+       easyQuestions: [
     {
         question: 'What company was initially known as "Blue Ribbon Sports"?',
         answers: ['Adidas', 'Nike', 'Chelsea', 'Puma'],
@@ -70,6 +72,8 @@ questions: [
         correctAnswer: 2,
         difficultyId: 1
     },
+],
+    mediumQuestions: [
     {
         question: 'What is the capital city of Canada?',
         answers: ['Toronto', 'Vancouver', 'Montreal', 'Ottawa'],
@@ -130,6 +134,8 @@ questions: [
         correctAnswer: 0,
         difficultyId: 2
     },
+],
+    hardQuestions: [
     {
         question: 'Which country has the most natural lakes in the world?',
         answers: ['Russia', 'United States', 'Canada', 'Finland'],
@@ -196,7 +202,7 @@ questions: [
     {
     id: 2,
     name: 'filmAndTv',
-    questions: [
+    easyQuestions: [
     {
         question: 'Who played Ron Weasley in the Harry Potter franchise?',
         answers: ['Daniel Radcliffe', 'Tom Oswald', 'Jonathan Banks', 'Rupert Grint'],
@@ -257,6 +263,7 @@ questions: [
         correctAnswer: 1,
         difficultyId: 1
     },
+    mediumQuestions = [
     {
         question: 'Who directed the 1997 film Titanic?',
         answers: ['Steven Spielberg', 'Christopher Nolan', 'Ridley Scott', 'James Cameron'],
@@ -299,6 +306,8 @@ questions: [
         correctAnswer: 2,
         difficultyId: 2
     },
+],
+    hardQuestions = [
     {
         question: 'In The Lord of the Rings, what is the name of the creature who says "My precious"?',
         answers: ['Saruman', 'Sauron', 'Grima', 'Gollum'],
@@ -377,6 +386,7 @@ questions: [
         correctAnswer: 3,
         difficultyId: 3
     }
+    ]
 ]
     },
 
@@ -759,7 +769,7 @@ questions: [
 },
 
         {
-        name : music,
+        name : 'music',
         id : 5,
         questions :
         [
@@ -948,7 +958,7 @@ questions: [
     },
 
     {
-        name : sports,
+        name : 'sports',
         id : 6,
         questions : 
         [
@@ -1541,3 +1551,88 @@ questions: [
     ]
 },
 ] 
+
+// const difficulties = {
+//     'easy' : 1,
+//     'medium' : 2,
+//     'hard' : 3
+// }
+
+
+// // =================
+// // GAME SETTINGS
+// // =================
+
+// const QUESTIONS_PER_LEVEL = 10;
+// const REQUIRED_CORRECT = 7;
+
+// // The player is not told this value.
+// const TIME_LIMIT = 10000;
+
+const EASY = 1;
+const MEDIUM = 2;
+const HARD = 3;
+
+// //ask the user for difficulty
+// console.log("Easy:", EASY, "Medium:", MEDIUM, "Hard:", HARD)
+
+// let userDifficulty = Number(prompt.question("Please enter the correlating number for your chosen difficulty: "))
+
+// if(userDifficulty == EASY){console.log("You have chosen Easy difficulty!"), difficultyId = 1}
+// else if(userDifficulty == MEDIUM){console.log("You have chosen Medium difficulty!"), difficultyId = 2}
+// else if(userDifficulty == HARD){console.log("You have chosen Hard difficulty!"), difficultyId = 3}
+// else{console.log("That is not an option.")}
+
+//ask the user for level input
+
+
+//nested loop to continue looping until user gets less than the required correct amount correct
+
+
+//categories[0] = general knowledge
+//categories[1] = film and tv
+//categories[2] = food
+//categories[3] = maths
+//categories[4] = music
+//categories[5] = sports
+//categories[6] = geography
+//categories[7] = animals
+
+//let userCategories = Number(prompt.question("Please enter the corresponding number for your chosen Category: "))
+
+
+//initialize userCategories array
+let userCategories = []
+//ask the user for the category they want twice and print the category they chose
+console.log(categories[0].name + ": 0" + "\n" + categories[1].name+ ": 1" + "\n" + categories[2].name+ ": 2" + "\n" + categories[3].name + ": 3" + "\n" + categories[4].name + ": 4" + "\n" + categories[5].name + ": 5" + "\n" + categories[6].name + ": 6" + "\n" + categories[7].name + ": 7" + "\n")
+
+for(let i = 1; i<=2; i++){userCategories[i] = Number(prompt.question("Please enter the corresponding number for your chosen category number " + i + ": ")); if(userCategories[i] == userCategories[i-1]){console.log("Thats the same input."), i = i -1} else{console.log("You have chosen the category", categories[userCategories[i]].name)}}
+
+
+let userDifficultyId = 0
+// ask user for difficulty
+console.log("Easy:", EASY, "Medium:", MEDIUM, "Hard:", HARD)
+let userDifficulty = Number(prompt.question("Please enter the correlating number for your chosen difficulty: "))
+//print the difficulty they chose
+if(userDifficulty == EASY){console.log("You have chosen Easy difficulty!"), userDifficultyId = 1}
+else if(userDifficulty == MEDIUM){console.log("You have chosen Medium difficulty!"), userDifficultyId = 2}
+else if(userDifficulty == HARD){console.log("You have chosen Hard difficulty!"), userDifficultyId = 3}
+else{console.log("That is not an option.")}
+
+for(let j = 0; j<=10; j++){j = userCategories[j]
+
+    let questionsArray = [];
+
+    if(userDifficultyId == 1){questionsArray = categories[j].easyQuestions}
+
+    else if (userDifficultyId == 2){questionsArray = categories[j].mediumQuestions}
+
+    else if (userDifficultyId == 3){questionsArray = categories[j].hardQuestions}
+
+    for(let k = 0; k < questionArray.length; k++) {
+    console.log("Question " + (k + 1) + ": " + questionArray[k].question);}
+   for(let l = 0; l < questionArray[k].answers.length; l++) {
+      console.log("   [" + l + "] " + questionArray[k].answers[l]);
+    }
+  console.log("\n");
+}
