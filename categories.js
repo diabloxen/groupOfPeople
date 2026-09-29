@@ -381,6 +381,7 @@ questions: [
     },
 
 {
+    id: 3,
     name: 'food',
     questions: [
         // Easy
@@ -563,6 +564,7 @@ questions: [
 },
 
 {
+    id: 4,
     name: 'maths',
     questions: [
         // Easy
@@ -759,7 +761,7 @@ questions: [
 },
 
         {
-        name : music,
+        name : "music",
         id : 5,
         questions :
         [
@@ -948,7 +950,7 @@ questions: [
     },
 
     {
-        name : sports,
+        name : "sports",
         id : 6,
         questions : 
         [
