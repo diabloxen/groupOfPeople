@@ -1,6 +1,11 @@
-import prompt from 'readline-sync';
 import readline from 'node:readline';
 import {categories} from './categories.js';
+
+
+const rl = readline.createInterface({
+    input: process.stdin,
+    output: process.stdout
+});
 
 
 // GAME SETTINGS
@@ -36,6 +41,47 @@ const results = [
     [],
     []
 ];
+
+function ask(prompt, timeLimit) {
+
+    return new Promise(function(resolve) {
+
+        let answered = false;
+
+        let timer = null;
+
+
+        if (timeLimit) {
+
+            timer = setTimeout(function() {
+
+                if (answered === false) {
+
+                    answered = true;
+
+                    console.log("\nTime's up!");
+
+                    resolve(null);
+                }
+
+            }, timeLimit);
+        }
+
+
+        rl.question(prompt, function(answer) {
+
+            if (answered === false) {
+
+                answered = true;
+
+                clearTimeout(timer);
+
+                resolve(answer);
+            }
+        });
+    });
+}
+
 
 //Welcome message
 
@@ -77,45 +123,3 @@ function displayCategories() {
 }
 
 
-//passes a callback as an argument to the function, which is called when a category is selected
-function chooseCategory(callback) {
-    const rl = readline.createInterface({
-        input: process.stdin,
-        output: process.stdout
-    });
-
-    displayCategories();
-
-    rl.question("\nEnter category number: ", 
-        function(answer) {
-
-        const categoryId = Number(answer);
-        let selectedCategory = null;
-
-        for (let i = 0; i < categories.length; i++) {
-
-            if (categories[i].id === categoryId) {
-                selectedCategory = categories[i];
-            }
-        }
-
-        if (selectedCategory !== null) {
-
-            console.log(
-                "\nYou selected: " + selectedCategory.name
-            );
-
-            rl.close();
-
-            callback(selectedCategory);
-
-        } else {
-
-            console.log("\nInvalid category. Please try again.");
-
-            rl.close();
-
-            chooseCategory(callback);
-        }
-    });
-}
