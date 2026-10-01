@@ -121,3 +121,34 @@ function displayCategories() {
         );
     }
 }
+
+function displayLevelInfo(){
+    console.log("\n------");
+
+    switch (currentLevel) {
+        case 1:
+            console.log("LEVEL 1 - EASY");
+            break;
+        case 2:
+            console.log("LEVEL 2 - MEDIUM");
+            break;
+        case 3:
+            console.log("LEVEL 3 - HARD");
+            break;
+    }
+
+function displayQuestion(question, questionNumber){
+    console.log("Question " + questionNumber + " of " + QUESTIONS_PER_LEVEL);
+
+    console.log("");
+    console.log("");
+
+    console.log(question.question);
+    console.log("");
+
+    for(let i = 0; i < question.answers.length; i++) {
+        console.log((i + 1) + ". " + question.answers[i]);
+    }
+    console.log("");
+}
+}
