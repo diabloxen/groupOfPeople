@@ -137,5 +137,17 @@ function displayLevelInfo(){
             break;
     }
 
-    console.log("\n");
+function displayQuestion(question, questionNumber){
+    console.log("Question " + questionNumber + " of " + QUESTIONS_PER_LEVEL);
+
+    console.log("");
+    console.log("");
+
+    console.log(question.question);
+    console.log("");
+
+    for(let i = 0; i < question.answers.length; i++) {
+        console.log((i + 1) + ". " + question.answers[i]);
+    }
+    console.log("");
 }
