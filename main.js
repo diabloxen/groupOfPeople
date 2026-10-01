@@ -121,3 +121,21 @@ function displayCategories() {
         );
     }
 }
+
+function displayLevelInfo(){
+    console.log("\n------");
+
+    switch (currentLevel) {
+        case 1:
+            console.log("LEVEL 1 - EASY");
+            break;
+        case 2:
+            console.log("LEVEL 2 - MEDIUM");
+            break;
+        case 3:
+            console.log("LEVEL 3 - HARD");
+            break;
+    }
+
+    console.log("\n");
+}
