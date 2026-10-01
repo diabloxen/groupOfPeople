@@ -137,6 +137,8 @@ function displayLevelInfo(){
             console.log("LEVEL 3 - HARD");
             break;
     }
+    console.log("\n");
+};
 
 function displayQuestion(question, questionNumber){
     console.log("Question " + questionNumber + " of " + QUESTIONS_PER_LEVEL);
@@ -152,4 +154,4 @@ function displayQuestion(question, questionNumber){
     }
     console.log("");
 }
-}
+
