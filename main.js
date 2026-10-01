@@ -105,7 +105,7 @@ function displayWelcome() {
     console.log("Good luck!, Have Fun, Dont Die!\n");
 }
 
-// displayWelcome();
+ displayWelcome();
 
 
 //display categories 
