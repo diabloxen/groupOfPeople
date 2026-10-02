@@ -219,3 +219,13 @@ function getLevelQuestions(category) {
 
     return levelQuestions;
 };
+
+function checkAnswer(playerAnswer, question) { 
+    if (playerAnswer === null) {
+        return false;
+    }
+
+    const answerIndex = Number(playerAnswer) - 1;
+
+    return answerIndex === question.correctAnswer;
+}
