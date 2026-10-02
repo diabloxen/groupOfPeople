@@ -218,4 +218,4 @@ function getLevelQuestions(category) {
     }
 
     return levelQuestions;
-}
+};
