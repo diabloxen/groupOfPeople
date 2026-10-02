@@ -151,3 +151,27 @@ function displayQuestion(question, questionNumber){
     }
     console.log("");
 }
+
+function displayFinalScore() {
+    console.log("\n-----");
+    console.log("you won");
+    console.log("");
+
+    console.log("Final Score: " + totalScore + "/30");
+
+    console.log("\nResults:");
+
+    for (let level = 0; level < results.length; level++) {
+        console.log("\nLevel " + (level + 1) + ":");
+
+        for (let question = 0; question < results[level].length; question++) {
+            if (results[level][question] === 1) {
+                console.log("Question " + (question + 1) + ": Correct");
+            } else {
+                console.log("Question " + (question + 1) + ": Incorrect");
+            }
+        }
+    }
+
+    console.log("\n-----------\n");
+};
