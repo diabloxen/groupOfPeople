@@ -123,3 +123,58 @@ function displayCategories() {
 }
 
 
+function displayLevelInfo(){
+    console.log("\n------");
+
+    switch (currentLevel) {
+        case 1:
+            console.log("LEVEL 1 - EASY");
+            break;
+        case 2:
+            console.log("LEVEL 2 - MEDIUM");
+            break;
+        case 3:
+            console.log("LEVEL 3 - HARD");
+            break;
+    }
+    console.log("\n");
+};
+
+function displayQuestion(question, questionNumber){
+    console.log("Question " + questionNumber + " of " + QUESTIONS_PER_LEVEL);
+
+    console.log("");
+    console.log("");
+
+    console.log(question.question);
+    console.log("");
+
+    for(let i = 0; i < question.answers.length; i++) {
+        console.log((i + 1) + ". " + question.answers[i]);
+    }
+    console.log("");
+};
+
+function displayFinalScore() {
+    console.log("\n-----");
+    console.log("you won");
+    console.log("");
+
+    console.log("Final Score: " + totalScore + "/30");
+
+    console.log("\nResults:");
+
+    for (let level = 0; level < results.length; level++) {
+        console.log("\nLevel " + (level + 1) + ":");
+
+        for (let question = 0; question < results[level].length; question++) {
+            if (results[level][question] === 1) {
+                console.log("Question " + (question + 1) + ": Correct");
+            } else {
+                console.log("Question " + (question + 1) + ": Incorrect");
+            }
+        }
+    }
+
+    console.log("\n-----------\n");
+};
