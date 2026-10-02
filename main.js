@@ -203,7 +203,7 @@ function getTimeLimit() {
         default:
             return EASY_TIME;
     }
-}
+};
 
 // QUESTIONS
 
