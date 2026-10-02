@@ -213,7 +213,7 @@ function getLevelQuestions(category) {
 
     for (let i = 0; i < category.questions.length; i++) {
         if (category.questions[i].difficultyId === difficultyId) {
-
+            levelQuestions.push(category.questions[i]);
         }
     }
 
