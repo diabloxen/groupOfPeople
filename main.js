@@ -176,3 +176,31 @@ function displayFinalScore() {
 
     console.log("\n-----------\n");
 }
+
+function getTimeLimit() {
+    switch (currentLevel) {
+        case 1:
+            return EASY_TIME;
+        case 2:
+            return MEDIUM_TIME;
+        case 3:
+            return HARD_TIME;
+        default:
+            return EASY_TIME;
+    }
+};
+
+// QUESTIONS
+
+function getLevelQuestions(category) {
+    const difficultyId = getDifficultyId(currentLevel);
+    const levelQuestions = [];
+
+    for (let i = 0; i < category.questions.length; i++) {
+        if (category.questions[i].difficultyId === difficultyId) {
+
+        }
+    }
+
+    return levelQuestions;
+};
