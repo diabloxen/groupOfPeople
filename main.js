@@ -175,3 +175,16 @@ function displayFinalScore() {
 
     console.log("\n-----------\n");
 };
+
+function getDifficultyId(level) { 
+    switch(level) {
+        case 1:
+            return EASY;
+        case 2:
+            return MEDIUM;
+        case 3:
+            return HARD;
+        default:
+            return EASY;
+    }
+}
