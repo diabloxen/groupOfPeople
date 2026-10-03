@@ -60,6 +60,7 @@ function ask(prompt, timeLimit) {
                     answered = true;
 
                     console.log("\nTime's up!");
+                    console.log("");
 
                     resolve(null);
                 }
@@ -170,8 +171,10 @@ function displayFinalScore() {
         for (let question = 0; question < results[level].length; question++) {
             if (results[level][question] === 1) {
                 console.log("Question " + (question + 1) + ": Correct");
+                console.log("");
             } else {
                 console.log("Question " + (question + 1) + ": Incorrect");
+                console.log("");
             }
         }
     }
@@ -321,9 +324,10 @@ async function main() {
 
     do {
         await playGame();
-    } while (await playAgain());
+    } 
+    while (await playAgain());
 
-    console.log("\nThanks for playing!");
+    console.log("\nThanks for playing!");  
 }
 
 main();
