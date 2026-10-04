@@ -89,23 +89,22 @@ function ask(prompt, timeLimit) {
 //Welcome message
 // Displays the welcome message, game rules and instructions for passing each level.
 function displayWelcome() {
-
-    console.log("\n=============================");
+    console.log("\n===============================");
     console.log("    WELCOME TO THINK FAST!");
     console.log("===============================\n");
 
-    console.log("You have to complete 3 levels to win");
+    console.log("You have to complete 3 levels to win.");
     console.log("Each level contains 10 questions.");
     console.log("");
     console.log("Answer each question as quickly as you can!");
     console.log("");
-    console.log("You are being timed, but Think Fast! cause the time limit is unknown");
+    console.log("You are being timed, but the time limit is hidden. Think fast!");
     console.log("");
     console.log("If time runs out, the question will be marked as incorrect.");
     console.log("");
     console.log("You need at least 7 correct answers to pass each level.");
-    //temp
-    console.log("Good luck!, Have Fun, Dont Die!\n");
+    // Temporary closing message.
+    console.log("Good luck! Have fun! Don't die!\n");
 }
 
  displayWelcome();
