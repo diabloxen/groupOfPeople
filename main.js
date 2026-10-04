@@ -41,6 +41,9 @@ const results = [
     [],
     []
 ];
+// Prompts the player for an answer and returns a Promise.
+// Resolves with the entered text, or null if the time limit expires.
+// The time limit is measured in milliseconds.
 
 function ask(prompt, timeLimit) {
 
@@ -84,7 +87,7 @@ function ask(prompt, timeLimit) {
 
 
 //Welcome message
-
+// Displays the welcome message, game rules and instructions for passing each level.
 function displayWelcome() {
 
     console.log("\n=============================");
@@ -109,7 +112,7 @@ function displayWelcome() {
 
 
 //display categories 
-
+// Displays each category's ID and name so the player can choose a category.
 function displayCategories() {
 
     console.log("Choose a category:");
@@ -121,7 +124,7 @@ function displayCategories() {
         );
     }
 }
-
+// Displays the level number and difficulty based on the current level.
 function displayLevelInfo(){
     console.log("\n------");
 
@@ -136,7 +139,8 @@ function displayLevelInfo(){
             console.log("LEVEL 3 - HARD");
             break;
     }
-
+// Displays the question number, question text and available answers.
+// Numbers the answers starting from 1 for the player.
 function displayQuestion(question, questionNumber){
     console.log("Question " + questionNumber + " of " + QUESTIONS_PER_LEVEL);
 
@@ -152,7 +156,8 @@ function displayQuestion(question, questionNumber){
     console.log("");
 }
 }
-
+// Displays the winning message, total score and results for each level.
+// Uses the stored results to show whether each answer was correct or incorrect.
 function displayFinalScore() {
     console.log("\n-----");
     console.log("you won");
@@ -176,7 +181,8 @@ function displayFinalScore() {
 
     console.log("\n-----------\n");
 }
-
+// Returns the time limit in milliseconds for the current level.
+// Defaults to the easy time limit if the level is not recognised.
 function getTimeLimit() {
     switch (currentLevel) {
         case 1:
@@ -191,7 +197,8 @@ function getTimeLimit() {
 };
 
 // QUESTIONS
-
+// Intended to collect questions matching the current level's difficulty.
+// Currently returns an empty array because the matching questions are not added.
 function getLevelQuestions(category) {
     const difficultyId = getDifficultyId(currentLevel);
     const levelQuestions = [];
@@ -204,7 +211,9 @@ function getLevelQuestions(category) {
 
     return levelQuestions;
 };
-
+// Checks whether the player's answer matches the question's correct answer.
+// Returns false if the player ran out of time.
+// Converts the player's answer number to a zero-based index before comparing.
 function checkAnswer(playerAnswer, question) {   //josh
     if (playerAnswer === null) {
         return false;
