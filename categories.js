@@ -6,10 +6,10 @@ export const categories =
        id: 1,
 questions: [
     {
-        question: 'What company was initially known as "Blue Ribbon Sports"?',
-        answers: ['Adidas', 'Nike', 'Chelsea', 'Puma'],
-        correctAnswer: 1,
-        difficultyId: 1
+       question: 'Which company was initially known as "Blue Ribbon Sports"?',
+       answers: ['Adidas', 'Nike', 'Chelsea', 'Puma'],
+       correctAnswer: 1,
+       difficultyId: 1
     },
     {
         question: 'What is a word, phrase, number, or other sequence of characters that reads the same backward as forward?',
