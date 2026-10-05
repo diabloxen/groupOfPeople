@@ -63,6 +63,7 @@ function ask(prompt, timeLimit) {
                     answered = true;
 
                     console.log("\nTime's up!");
+                    console.log("");
 
                     resolve(null);
                 }
@@ -98,20 +99,20 @@ function displayWelcome() {
     console.log("");
     console.log("Answer each question as quickly as you can!");
     console.log("");
-    console.log("You are being timed, but the time limit is hidden. Think fast!");
+    console.log("You are being timed, but Think Fast! cause the time limit is unknown");
     console.log("");
     console.log("If time runs out, the question will be marked as incorrect.");
     console.log("");
     console.log("You need at least 7 correct answers to pass each level.");
-    // Temporary closing message.
-    console.log("Good luck! Have fun! Don't die!\n");
+    //temp
+    console.log("Good luck!, Have Fun, Dont Die!\n");
 }
 
- displayWelcome();
+//  displayWelcome();
 
 
 //display categories 
-// Displays each category's ID and name so the player can choose a category.
+
 function displayCategories() {
 
     console.log("Choose a category:");
@@ -123,7 +124,8 @@ function displayCategories() {
         );
     }
 }
-// Displays the level number and difficulty based on the current level.
+
+
 function displayLevelInfo(){
     console.log("\n------");
 
@@ -138,8 +140,9 @@ function displayLevelInfo(){
             console.log("LEVEL 3 - HARD");
             break;
     }
-// Displays the question number, question text and available answers.
-// Numbers the answers starting from 1 for the player.
+    console.log("\n");
+};
+
 function displayQuestion(question, questionNumber){
     console.log("Question " + questionNumber + " of " + QUESTIONS_PER_LEVEL);
 
@@ -153,10 +156,8 @@ function displayQuestion(question, questionNumber){
         console.log((i + 1) + ". " + question.answers[i]);
     }
     console.log("");
-}
-}
-// Displays the winning message, total score and results for each level.
-// Uses the stored results to show whether each answer was correct or incorrect.
+};
+
 function displayFinalScore() {
     console.log("\n-----");
     console.log("you won");
@@ -172,16 +173,30 @@ function displayFinalScore() {
         for (let question = 0; question < results[level].length; question++) {
             if (results[level][question] === 1) {
                 console.log("Question " + (question + 1) + ": Correct");
+                console.log("");
             } else {
                 console.log("Question " + (question + 1) + ": Incorrect");
+                console.log("");
             }
         }
     }
 
     console.log("\n-----------\n");
-}
-// Returns the time limit in milliseconds for the current level.
-// Defaults to the easy time limit if the level is not recognised.
+};
+
+function getDifficultyId(level) { 
+    switch(level) {
+        case 1:
+            return EASY;
+        case 2:
+            return MEDIUM;
+        case 3:
+            return HARD;
+        default:
+            return EASY;
+    }
+};
+
 function getTimeLimit() {
     switch (currentLevel) {
         case 1:
@@ -196,24 +211,21 @@ function getTimeLimit() {
 };
 
 // QUESTIONS
-// Intended to collect questions matching the current level's difficulty.
-// Currently returns an empty array because the matching questions are not added.
+
 function getLevelQuestions(category) {
     const difficultyId = getDifficultyId(currentLevel);
     const levelQuestions = [];
 
     for (let i = 0; i < category.questions.length; i++) {
         if (category.questions[i].difficultyId === difficultyId) {
-
+            levelQuestions.push(category.questions[i]);
         }
     }
 
     return levelQuestions;
 };
-// Checks whether the player's answer matches the question's correct answer.
-// Returns false if the player ran out of time.
-// Converts the player's answer number to a zero-based index before comparing.
-function checkAnswer(playerAnswer, question) {   //josh
+
+function checkAnswer(playerAnswer, question) { 
     if (playerAnswer === null) {
         return false;
     }
@@ -222,3 +234,104 @@ function checkAnswer(playerAnswer, question) {   //josh
 
     return answerIndex === question.correctAnswer;
 }
+
+async function chooseCategory() {
+    while (true) {
+        displayCategories();
+
+        const answer = await ask("\nEnter category number: ");
+        const category = categories.find(c => c.id === Number(answer));
+
+        if (category) {
+            console.log("\nYou selected: " + category.name);
+            return category;
+        }
+
+        console.log("\nThis Category doesn't exist, Please try again.");
+    }
+}
+
+
+async function playLevel(category) {       
+    correctAnswers = 0;
+    results[currentLevel - 1] = [];
+
+    const levelQuestions = getLevelQuestions(category);
+    displayLevelInfo();
+
+    for (let i = 0; i < QUESTIONS_PER_LEVEL; i++) {
+        const question = levelQuestions[i];
+
+        displayQuestion(question, i + 1);
+
+        const playerAnswer = await ask("Your answer: ", getTimeLimit());
+
+        if (checkAnswer(playerAnswer, question)) {
+            console.log("Correct!");
+            correctAnswers++;
+            totalScore++;
+            results[currentLevel - 1].push(1);
+        } else {
+            console.log("Incorrect.");
+            results[currentLevel - 1].push(0);
+        }
+    }
+
+    console.log("\n------");
+    console.log("Level " + currentLevel + " complete!");
+    console.log("Correct answers: " + correctAnswers + "/" + QUESTIONS_PER_LEVEL);
+    console.log("\n");
+
+    return correctAnswers >= REQUIRED_CORRECT;
+}
+
+async function playGame() {
+    currentLevel = 1;
+    totalScore = 0;
+    correctAnswers = 0;
+    results[0] = [];
+    results[1] = [];
+    results[2] = [];
+
+    while (currentLevel <= 3) {
+        const category = await chooseCategory();
+        const passed = await playLevel(category);
+
+        if (!passed) {
+            console.log("\nYou did not get 7 or more correct.");
+            console.log("Think Faster next time! ;)");
+            console.log("\n");
+            return;
+        }
+    }
+
+        if (currentLevel === 3) {
+            displayFinalScore();
+            return;
+        }
+    }
+
+        currentLevel++;
+    }
+}
+
+async function playAgain() {
+    const answer = await ask("Would you like to play again? (y/n): ");
+    return answer.toLowerCase() === "y";
+}
+
+
+// RUN PROGRAM
+
+async function main() {
+    displayWelcome();
+
+    do {
+        await playGame();
+    } 
+    while (await playAgain());
+
+    console.log("\nThanks for playing!");  
+}
+
+main();
