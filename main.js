@@ -1,7 +1,8 @@
+//Import statments
 import readline from 'node:readline';
 import {categories} from './categories.js';
 
-
+//assign the readline function to a variable 
 const rl = readline.createInterface({
     input: process.stdin,
     output: process.stdout
@@ -13,7 +14,7 @@ const QUESTIONS_PER_LEVEL = 10;
 const REQUIRED_CORRECT = 7;
 
 
-// The player is not told this value, main point
+// The player is not told this value,
 const EASY_TIME = 10000;
 const MEDIUM_TIME = 10000;
 const HARD_TIME = 7000;
@@ -41,9 +42,10 @@ const results = [
     [],
     []
 ];
+
 // Prompts the player for an answer and returns a Promise.
 // Resolves with the entered text, or null if the time limit expires.
-// The time limit is measured in milliseconds.
+
 
 function ask(prompt, timeLimit) {
 
@@ -104,8 +106,7 @@ function displayWelcome() {
     console.log("If time runs out, the question will be marked as incorrect.");
     console.log("");
     console.log("You need at least 7 correct answers to pass each level.");
-    //temp
-    console.log("Good luck!, Have Fun, Dont Die!\n");
+    console.log("Good luck!\n");
     console.log('')
 }
 
@@ -126,7 +127,7 @@ function displayCategories() {
     }
 }
 
-
+//Display Level Info
 function displayLevelInfo(){
     console.log("\n------");
 
@@ -144,6 +145,7 @@ function displayLevelInfo(){
     console.log("\n");
 };
 
+//Function that displays each question
 function displayQuestion(question, questionNumber){
     console.log("Question " + questionNumber + " of " + QUESTIONS_PER_LEVEL);
 
@@ -152,12 +154,14 @@ function displayQuestion(question, questionNumber){
 
     console.log(question.question);
     console.log("");
-
+//loops through each question answer
     for(let i = 0; i < question.answers.length; i++) {
         console.log((i + 1) + ". " + question.answers[i]);
     }
     console.log("");
 };
+
+//display final score
 
 function displayFinalScore() {
     console.log("\n-----");
@@ -170,7 +174,7 @@ function displayFinalScore() {
 
     for (let level = 0; level < results.length; level++) {
         console.log("\nLevel " + (level + 1) + ":");
-
+//Loops through each question and checks the result array if the assigned value in the array is 1 it prints the question as correct else wrong
         for (let question = 0; question < results[level].length; question++) {
             if (results[level][question] === 1) {
                 console.log("Question " + (question + 1) + ": Correct");
@@ -185,6 +189,7 @@ function displayFinalScore() {
     console.log("\n-----------\n");
 };
 
+//Assigns the difficulty to the difficultyID
 function getDifficultyId(level) { 
     switch(level) {
         case 1:
@@ -198,6 +203,7 @@ function getDifficultyId(level) {
     }
 };
 
+//Converts the timelimit
 function getTimeLimit() {
     switch (currentLevel) {
         case 1:
@@ -211,7 +217,8 @@ function getTimeLimit() {
     }
 };
 
-// QUESTIONS
+// Get Questions From category, checks if the category questions' difficulty is equals to the current difficulty of the current level
+//If yes it returns the level question and stores it in an array and returns the array
 
 function getLevelQuestions(category) {
     const difficultyId = getDifficultyId(currentLevel);
@@ -226,13 +233,16 @@ function getLevelQuestions(category) {
     return levelQuestions;
 };
 
+
+//Checks the players answer 
 function checkAnswer(playerAnswer, question) { 
     if (playerAnswer === null) {
         return false;
     }
-
+//Decrements the players answer by one and concatenate it to a number 
     const answerIndex = Number(playerAnswer) - 1;
 
+    // returns a boolean, true if answerIndex is strictly equals to question.correctAnswer
     return answerIndex === question.correctAnswer;
 }
 
@@ -313,8 +323,7 @@ async function playGame() {
     }
 
         currentLevel++;
-    }
-}
+    
 
 async function playAgain() {
     const answer = await ask("Would you like to play again? (y/n): ");
