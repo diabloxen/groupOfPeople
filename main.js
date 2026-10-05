@@ -14,7 +14,7 @@ const QUESTIONS_PER_LEVEL = 10;
 const REQUIRED_CORRECT = 7;
 
 
-// The player is not told this value,
+///Time limits for each level 
 const EASY_TIME = 10000;
 const MEDIUM_TIME = 10000;
 const HARD_TIME = 7000;
@@ -44,7 +44,7 @@ const results = [
 ];
 
 // Prompts the player for an answer and returns a Promise.
-// Resolves with the entered text, or null if the time limit expires.
+// Resolves with the answer, or null if the time limit expires.
 
 
 function ask(prompt, timeLimit) {
@@ -90,7 +90,7 @@ function ask(prompt, timeLimit) {
 
 
 //Welcome message
-// Displays the welcome message, game rules and instructions for passing each level.
+
 function displayWelcome() {
     console.log("\n===============================");
     console.log("    WELCOME TO THINK FAST!");
@@ -246,6 +246,9 @@ function checkAnswer(playerAnswer, question) {
     return answerIndex === question.correctAnswer;
 }
 
+
+
+// Prompts the player to choose a category and returns the selected category object
 async function chooseCategory() {
     while (true) {
         displayCategories();
@@ -263,6 +266,8 @@ async function chooseCategory() {
 }
 
 
+
+// Plays a level of the game, returns true if the player passed, false otherwise
 async function playLevel(category) {       
     correctAnswers = 0;
     results[currentLevel - 1] = [];
@@ -296,6 +301,7 @@ async function playLevel(category) {
     return correctAnswers >= REQUIRED_CORRECT;
 }
 
+// Main game loop
 async function playGame() {
     currentLevel = 1;
     totalScore = 0;
