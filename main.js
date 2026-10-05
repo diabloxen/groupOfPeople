@@ -41,6 +41,9 @@ const results = [
     [],
     []
 ];
+// Prompts the player for an answer and returns a Promise.
+// Resolves with the entered text, or null if the time limit expires.
+// The time limit is measured in milliseconds.
 
 function ask(prompt, timeLimit) {
 
@@ -85,14 +88,13 @@ function ask(prompt, timeLimit) {
 
 
 //Welcome message
-
+// Displays the welcome message, game rules and instructions for passing each level.
 function displayWelcome() {
-
-    console.log("\n=============================");
+    console.log("\n===============================");
     console.log("    WELCOME TO THINK FAST!");
     console.log("===============================\n");
 
-    console.log("You have to complete 3 levels to win");
+    console.log("You have to complete 3 levels to win.");
     console.log("Each level contains 10 questions.");
     console.log("");
     console.log("Answer each question as quickly as you can!");
@@ -301,11 +303,13 @@ async function playGame() {
             console.log("\n");
             return;
         }
+    }
 
         if (currentLevel === 3) {
             displayFinalScore();
             return;
         }
+    }
 
         currentLevel++;
     }

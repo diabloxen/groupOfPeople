@@ -6,10 +6,10 @@ export const categories =
        id: 1,
 questions: [
     {
-        question: 'What company was initially known as "Blue Ribbon Sports"?',
-        answers: ['Adidas', 'Nike', 'Chelsea', 'Puma'],
-        correctAnswer: 1,
-        difficultyId: 1
+       question: 'Which company was initially known as "Blue Ribbon Sports"?',
+       answers: ['Adidas', 'Nike', 'Chelsea', 'Puma'],
+       correctAnswer: 1,
+       difficultyId: 1
     },
     {
         question: 'What is a word, phrase, number, or other sequence of characters that reads the same backward as forward?',
@@ -1147,13 +1147,13 @@ questions: [
         
 
         {
-            question: 'What is the capital of Australia?',
+            question: 'Which city is the capital of Australia?',
             answers: ['Sydney', 'Melbourne', 'Canberra', 'Perth'],
             correctAnswer: 2,
             difficultyId: 1
         },
         {
-            question: 'Which country has the largest population in Africa?',
+            question: 'Which African country has the largest population?',
             answers: ['Egypt', 'Nigeria', 'Ethiopia', 'South Africa'],
             correctAnswer: 1,
             difficultyId: 1
