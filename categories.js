@@ -2,7 +2,7 @@ export const categories =
 [
     {
 // suggest to add an id later, idk itll be useful for something later
-       name: 'generalKnowledge',
+       name: 'General Knowledge',
        id: 1,
 questions: [
     {
@@ -65,9 +65,9 @@ questions: [
         difficultyId: 1
     },
     {
-        question: "Who played Terminator in the hit movie 'Terminator'?",
-        answers: ['Sylvester Stallone', 'Chuck Norris', 'Arnold Schwarzenegger', 'Brad Pitt'],
-        correctAnswer: 2,
+        question: "What was the name of the first mammal in space'?",
+        answers: ['Albert II', 'Buzz Aldrin ', 'Laika', 'Brad Pitt'],
+        correctAnswer: 0,
         difficultyId: 1
     },
     {
@@ -185,9 +185,9 @@ questions: [
         difficultyId: 3
     },
     {
-        question: 'What is the name of the process by which plants release water vapour through their leaves?',
-        answers: ['Photosynthesis', 'Respiration', 'Osmosis', 'Transpiration'],
-        correctAnswer: 3,
+        question: 'What Country won the world cup in 2022',
+        answers: ['France', 'Argentina', 'Portugal', 'Spain'],
+        correctAnswer: 1,
         difficultyId: 3
     }
 ]
@@ -195,7 +195,7 @@ questions: [
 
     {
     id: 2,
-    name: 'filmAndTv',
+    name: 'Film And Tv',
     questions: [
     {
         question: 'Who played Ron Weasley in the Harry Potter franchise?',
@@ -210,9 +210,9 @@ questions: [
         difficultyId: 1
     },
     {
-        question: 'Which film features the quote "I\'ll be back"?',
-        answers: ['Rocky', 'Die Hard', 'Terminator', 'Predator'],
-        correctAnswer: 2,
+        question: 'What 60s film  holds the Guinness World Record for the largest film budget allocated specifically for special effects at the time of its release "?',
+        answers: ['2001: A Space Odyssey', 'The Jungle Book', 'One Hundred and One Dalmatians', 'The Sound of Music'],
+        correctAnswer: 0,
         difficultyId: 1
     },
     {
@@ -382,7 +382,7 @@ questions: [
 
 {
     id: 3,
-    name: 'food',
+    name: 'Food',
     questions: [
         // Easy
         {
@@ -565,7 +565,7 @@ questions: [
 
 {
     id: 4,
-    name: 'maths',
+    name: 'Maths',
     questions: [
         // Easy
         {
@@ -761,7 +761,7 @@ questions: [
 },
 
         {
-        name : "music",
+        name : "Music",
         id : 5,
         questions :
         [
@@ -950,7 +950,7 @@ questions: [
     },
 
     {
-        name : "sports",
+        name : "Sports",
         id : 6,
         questions : 
         [
@@ -1138,7 +1138,7 @@ questions: [
 
     
       {
-    name: 'geography',
+    name: 'Geography',
     id: 7,
     questions: [
 

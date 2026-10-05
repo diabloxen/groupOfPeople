@@ -104,6 +104,7 @@ function displayWelcome() {
     console.log("You need at least 7 correct answers to pass each level.");
     //temp
     console.log("Good luck!, Have Fun, Dont Die!\n");
+    console.log('')
 }
 
 //  displayWelcome();
@@ -328,6 +329,7 @@ async function main() {
     while (await playAgain());
 
     console.log("\nThanks for playing!");  
+    rl.close()
 }
 
 main();
