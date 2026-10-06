@@ -16,7 +16,7 @@ const REQUIRED_CORRECT = 7;
 
 ///Time limits for each level 
 const EASY_TIME = 10000;
-const MEDIUM_TIME = 10000;
+const MEDIUM_TIME = 15000;
 const HARD_TIME = 7000;
 
 //Difficulty 
@@ -101,7 +101,7 @@ function displayWelcome() {
     console.log("");
     console.log("Answer each question as quickly as you can!");
     console.log("");
-    console.log("You are being timed, but Think Fast! cause the time limit is unknown");
+    console.log("You are being timed, but the time limit is hidden, Think Fast!");
     console.log("");
     console.log("If time runs out, the question will be marked as incorrect.");
     console.log("");
