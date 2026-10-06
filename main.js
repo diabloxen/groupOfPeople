@@ -165,7 +165,7 @@ function displayQuestion(question, questionNumber){
 
 function displayFinalScore() {
     console.log("\n-----");
-    console.log("you won");
+    console.log("YOU WON!");
     console.log("");
 
     console.log("Final Score: " + totalScore + "/30");
