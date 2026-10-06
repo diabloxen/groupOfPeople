@@ -320,16 +320,15 @@ async function playGame() {
             console.log("\n");
             return;
         }
-    }
 
         if (currentLevel === 3) {
             displayFinalScore();
             return;
         }
-    }
 
         currentLevel++;
-    
+    }
+}
 
 async function playAgain() {
     const answer = await ask("Would you like to play again? (y/n): ");
